@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2870E1;
+    z-index: 1000;
+}
+
+#loading-screen .logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.loading-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loading 1s infinite alternate;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.loading-dots span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+@keyframes loading {
+    to {
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-primary {
+    background-color: #2870E1;
+    border-color: #2870E1;
+}
+
+.btn-outline-secondary {
+    border-color: #2870E1;
+    color: #2870E1;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #2870E1;
+    color: #fff;
+}
+
+.account{
+    margin-top: 20px;
+}
+
+.terms{
+    color: #666666e7;
+}
+
+.terms a{
+    color: #585858c0;
+    text-decoration: dashed;
+}
+
+.form-control{
+    height: 60px;
+    border-radius: 15px;
+}
+
+.btn{
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.block{
+    color: #272727;
+    text-align: center;
+}
